@@ -21,7 +21,12 @@ A release is done when an update of the **GNU Arm Embedded Toolchain** is requir
 It generally use the latest official [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
+### 6-2017-q2-update
+
+This release is equivalent to **6-2017-q2-update** from June 28, 2017,
+and is based on `gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2`.
+
 ### 6-2017-q1-update
 
 This release is equivalent to **6-2017-q1-update** from February 23, 2017,
-and is based on `gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2`.
+and is based on `gcc-arm-none-eabi-6-2017-q1-update-src.tar.bz2`.
