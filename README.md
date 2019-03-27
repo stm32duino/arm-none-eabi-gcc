@@ -7,7 +7,7 @@ Provide GNU Arm Embedded Toolchain binaries required during the installation of 
 Toolchain is automatically installed when the STM32 core is installed thanks the [Arduino Boards Manager](https://www.arduino.cc/en/guide/cores) --> See [stm32 core installation](https://github.com/stm32duino/wiki/wiki/Getting-Started#installing-stm32-cores) wiki page.
 
 This is **not** a new GCC toolchain distribution for ARM devices. 
-Official [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) distribution, by ARM.
+Official [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/gnu-toolchain/gnu-rm) distribution, by ARM.
 
 ## Changes
 
@@ -18,7 +18,7 @@ combinations of libraries** (derived from newlib) are provided.
 ## Releases
 
 A release is done when an update of the **GNU Arm Embedded Toolchain** is required for the [STM32 core](https://github.com/stm32duino/Arduino_Core_STM32) support for Arduino.
-It generally use the latest official [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
+It generally use the latest official [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
 ### 7-2018-q2-update
