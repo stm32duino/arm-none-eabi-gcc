@@ -1,0 +1,14 @@
+diff --git a/src/gcc/libiberty/ChangeLog b/src/gcc/libiberty/ChangeLog
+index 9b49747..ea9c1bf 100644
+--- a/src/gcc/libiberty/ChangeLog
++++ b/src/gcc/libiberty/ChangeLog
+@@ -1,3 +1,9 @@
++
++PR lto/88422
++	* simple-object.c (O_BINARY): Define if not already defined.
++	(simple_object_copy_lto_debug_sections): Create file in binary
++	mode.
++
+ 2018-07-26  Release Manager
+ 
+ 	* GCC 8.2.0 released.
