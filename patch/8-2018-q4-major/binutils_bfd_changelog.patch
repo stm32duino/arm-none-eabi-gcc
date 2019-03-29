@@ -1,0 +1,15 @@
+diff --git a/src/binutils/bfd/ChangeLog b/src/binutils/bfd/ChangeLog
+index 9acd28d..17eae57 100644
+--- a/src/binutils/bfd/ChangeLog
++++ b/src/binutils/bfd/ChangeLog
+@@ -1,3 +1,10 @@
++2019-01-08  Alan Modra  <amodra@gmail.com>
++
++	PR 23699
++	PR 24065
++	* ihex.c (ihex_write_object_contents): Properly check 32-bit
++	address range.
++
+ 2018-12-11  Max Filippov  <jcmvbkbc@gmail.com>
+ 
+ 	* elf32-xtensa.c (elf_xtensa_do_reloc): Limit const16 opcode
