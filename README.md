@@ -11,8 +11,10 @@ Official [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-softwa
 
 ## Changes
 
-Compared to the original ARM release, there are no changes. The **same architecture options** are supported and **the same 
-combinations of libraries** (derived from newlib) are provided. Some patch could be applied to fix know bugs.
+Compared to the original ARM release, there are no functional changes. The **same architecture options** are supported and **the same 
+combinations of libraries** (derived from newlib) are provided.
+
+Up to release **8-2018-q4-major**, toolchains was built and packaged by stm32duino GitHub organization members. Now, packages are based on [GNU MCU Eclipse ARM Embedded GCC](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc) releases. All required platforms (Windows, Linux and MacOS) are provided, they are only repackaged to fit Arduino requirements (root path and folder name changed, no modified files).
 
 
 ## Releases
@@ -21,12 +23,18 @@ A release is done when an update of the **GNU Arm Embedded Toolchain** is requir
 It generally use the latest official [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/gnu-toolchain/gnu-rm) 
 releases, maintained by ARM.
 
+### 8.2.1-1.7 ([GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.7 20190524](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.7) version)
+This release is functionally equivalent to **8-2018-q4-major** from December 20, 2018,
+and is based on `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2`, but fixes the bugs present in the initial ARM release.
+
 ### 8-2018-q4-major
 This release is equivalent to **8-2018-q4-major** from December 20, 2018,
 and is based on the `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2` source invariant except following patches were applied in:
  * gcc to fix the Windows LTO with -g [88422](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88422)
  * binutils to fix the 32-bit objcopy [24065](https://sourceware.org/bugzilla/show_bug.cgi?id=24065)
  * gcc to fix Windows paths with spaces and LTO [89249](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=89249)
+
+This release has an issue with the linker under Windows if paths contains spaces. See #1.
 
 ### 7-2018-q2-update
 
