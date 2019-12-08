@@ -1,5 +1,20 @@
 # The GNU Arm Embedded Toolchain binaries used by the [STM32 core](https://github.com/stm32duino/Arduino_Core_STM32) support for Arduino
 
+---
+
+# Important note
+**_8.2.1-1.7_ is the latest release of this GitHub repository.**
+
+The [GNU MCU Eclipse ARM Embedded GCC](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc) was rebranded as [The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/) and was migrated to the xPack project.
+
+Releases are available here:
+
+https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases
+
+and are directly usable by the [STM32 core](https://github.com/stm32duino/Arduino_Core_STM32).
+
+---
+
 ## Rationale
 
 Provide GNU Arm Embedded Toolchain binaries required during the installation of the [STM32 core](https://github.com/stm32duino/Arduino_Core_STM32) support for Arduino which required 4 platforms.
@@ -15,7 +30,6 @@ Compared to the original ARM release, there are no functional changes. The **sam
 combinations of libraries** (derived from newlib) are provided.
 
 Up to release **8-2018-q4-major**, toolchains was built and packaged by stm32duino GitHub organization members. Now, packages are based on [GNU MCU Eclipse ARM Embedded GCC](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc) releases. All required platforms (Windows, Linux and MacOS) are provided, they are only repackaged to fit Arduino requirements (root path and folder name changed, no modified files).
-
 
 ## Releases
 
